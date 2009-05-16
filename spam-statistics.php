@@ -4,7 +4,7 @@ Plugin Name: Spam statistics
 Plugin URI: http://www.jenruno.com/SpamTask/
 Description: Show spam statistics on your blog.
 Author: Jenruno
-Version: 0.8
+Version: 0.8.1
 Author URI: http://www.jenruno.com/
 */
 
@@ -29,7 +29,8 @@ if(!class_exists("SpamStatistics")) {
 				$mode = get_option('spamtask_statistics_mode');
 				$count = get_option('spamtask_statistics_'.$mode);
 				$text = get_option('spamtask_statistics_'.$mode.'_text');
-				echo str_replace('[count]', $count, $text);
+				if(!$count) { $count = '0'; }
+				echo '<center>'.str_replace('[count]', $count, $text).'</center>';
 			}
 		}
 
