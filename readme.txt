@@ -4,7 +4,7 @@ Tags: spam, comments, anti-spam, antispam, spam filter, statistics, spamtask, sp
 Requires at least: 2.6.1
 Tested up to: 2.7.1
 
-Show spam statistics on your blog.
+Show spam statistics on your blog. (Now merged into SpamTask)
 
 == Description ==
 
